@@ -38,7 +38,7 @@ body {
             margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
-            outline: 2px solid tomato
+            /* outline: 2px solid tomato */
         }
 
 ul{
@@ -146,10 +146,20 @@ display: flex;
                 }
     /*-------------section name-----------*/
 .name{ 
+    
     background-color: var(--bgrd--title--color);
+    height: 600px;
     text-align: center;
     padding: 200px 0 ;
-    
+    background-image: linear-gradient(to right ,  
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../img/work.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  
+    margin-right: auto;
+    margin-left: auto;
   
 }
 .container_main_name{
@@ -187,7 +197,7 @@ padding-left: 237px;
         color: var(--second-title-color);
         background-color: var(--btx-title--color);
         border-radius: 4px;
-
+        border: 0;
         padding: 10px 32px ;
           
 }
@@ -445,7 +455,7 @@ font-size: 14px;
          gap: 30px;
 }
 .menu_project_list {
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
      
       max-width: 100%;
      
