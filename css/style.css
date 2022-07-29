@@ -339,8 +339,22 @@ padding-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color:aqua;
-    display: block;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+.team_soc_icon{
+    fill:currentColor
+}
+
+.team_soc_link:hover,
+.team_soc_link:focus{
+    background-color: var(--btx-title--color);
+color:#ffffff;
 }
 
  /*------------Footer-----------*/
