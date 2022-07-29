@@ -335,11 +335,10 @@ padding-bottom: 30px;
     justify-content: center;
     gap: 10px;
 }
-.team_soc_link{
+.team_soc_item{
     width: 44px;
     height: 44px;
     border-radius: 50%;
- 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,14 +346,15 @@ padding-bottom: 30px;
 }
 
 
-.team_soc_icon{
-    fill:currentColor
-}
-
 .team_soc_link:hover,
 .team_soc_link:focus{
+background-color: #fff;
+}
+
+.team_soc_item:hover,
+.team_soc_item:focus{
     background-color: var(--btx-title--color);
-color:#ffffff;
+
 }
 
  /*------------Footer-----------*/
