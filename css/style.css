@@ -24,6 +24,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+a{
+    text-decoration: none;
+}
 
 button{
     cursor: pointer;
@@ -49,7 +52,7 @@ margin: 0;
 
 /*-------------Header-----------*/
 .header-container{
-    border-bottom: 1px solid violet;
+    border-bottom: 1px solid var(--btx-title--color);
 }
 .header > .container{
     display: flex;
@@ -335,27 +338,25 @@ padding-bottom: 30px;
     justify-content: center;
     gap: 10px;
 }
-.team_soc_item{
+.team_soc_link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+color: #AFB1B8;
 }
-
-
+.team_soc_icon{
+    fill: currentColor;
+}
 .team_soc_link:hover,
 .team_soc_link:focus{
-background-color: #fff;
+   background-color: var(--btx-title--color);
+   color: #ffffff;
+  
 }
 
-.team_soc_item:hover,
-.team_soc_item:focus{
-    background-color: var(--btx-title--color);
-
-}
 
  /*------------Footer-----------*/
 
@@ -449,6 +450,9 @@ font-size: 14px;
 .port_btn_item{
 
     margin-left: 8px;
+}
+.blue_btn{
+    margin-left: 0;
 }
  .port_btn{
    display: flex;
