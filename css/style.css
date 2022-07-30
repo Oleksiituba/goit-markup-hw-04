@@ -52,7 +52,7 @@ margin: 0;
 
 /*-------------Header-----------*/
 .header-container{
-    border-bottom: 1px solid var(--btx-title--color);
+    border-bottom: 1px solid #ECECEC;
 }
 .header > .container{
     display: flex;
@@ -128,7 +128,8 @@ display: flex;
             padding-top: 32px;
                 padding-bottom: 32px;
     
-        
+    
+.header-link-contact >.icon
 }
 .header-link-contact:hover,
 .header-link-contact:focus{
@@ -226,7 +227,21 @@ padding-left: 237px;
 
    
 }
-
+.peculiarity_list::before{
+   display: block;
+    content: '';
+    height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center ;
+background-color:#F5F4FA;
+margin-bottom: 30px;
+}
+.peculiarity_list:nth-child(1)::before{
+background-image: url(../img/antenna.svg);
+margin-left: auto;
+margin-right: auto;
+}
 .peculiarity_item{
         font-size: 14px;
         line-height: 1.14;
