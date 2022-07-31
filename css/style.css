@@ -239,8 +239,17 @@ margin-bottom: 30px;
 }
 .peculiarity_list:nth-child(1)::before{
 background-image: url(../img/antenna.svg);
-margin-left: auto;
-margin-right: auto;
+background-size: contain;
+
+}
+.peculiarity_list:nth-child(2)::before {
+    background-image: url(../img/clock.svg);
+}
+.peculiarity_list:nth-child(3)::before {
+    background-image: url(../img/diagram.svg);
+}
+.peculiarity_list:nth-child(4)::before {
+    background-image: url(../img/astronaut.svg);
 }
 .peculiarity_item{
         font-size: 14px;
@@ -351,7 +360,7 @@ padding-bottom: 30px;
 .team_soc{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 .team_soc_link{
     width: 44px;
@@ -371,7 +380,43 @@ color: #AFB1B8;
    color: #ffffff;
   
 }
+ /*-------------section client-----------*/
+.client{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.client_title {
 
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--first-title-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.client_link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client_icon {
+    fill: currentColor;
+}
+
+.client_link:hover,
+.client_link:focus {
+    border-color: var(--btx-title--color);
+    color: var(--btx-title--color);
+
+}
 
  /*------------Footer-----------*/
 
@@ -438,6 +483,44 @@ font-size: 14px;
     color: var(--btx-title--color);
 }
 
+.footer_info {
+
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--first-title-color);
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--second-title-color);
+}
+.footer_soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_soc_link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--second-title-color);
+background-color: rgba(255, 255, 255,10%);
+}
+
+
+.footer_soc_icon {
+    fill: currentColor;
+}
+
+.footer_soc_link:hover,
+.footer_soc_link:focus {
+    background-color: var(--btx-title--color);
+    color: #ffffff;
+
+}
 
 
  /*------------PORTFOLIO-----------*/
