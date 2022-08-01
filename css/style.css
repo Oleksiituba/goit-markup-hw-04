@@ -125,11 +125,20 @@ display: flex;
         list-style: none;
         text-decoration: none;
         color: var(--text-title--color);
-            padding-top: 32px;
-                padding-bottom: 32px;
+         padding-top: 32px;
+         padding-bottom: 32px;
+            display: flex;
+                align-items: center
+}
+
+
+.contacts-ikon{
+
+    fill: currentColor;
+    margin-right: 10px;
+
     
-    
-.header-link-contact >.icon
+
 }
 .header-link-contact:hover,
 .header-link-contact:focus{
@@ -231,7 +240,8 @@ padding-left: 237px;
    display: block;
     content: '';
     height: 120px;
-background-size: contain;
+    
+background-size: 70px;
 background-repeat: no-repeat;
 background-position: center ;
 background-color:#F5F4FA;
@@ -239,7 +249,7 @@ margin-bottom: 30px;
 }
 .peculiarity_list:nth-child(1)::before{
 background-image: url(../img/antenna.svg);
-background-size: contain;
+
 
 }
 .peculiarity_list:nth-child(2)::before {
@@ -421,13 +431,16 @@ color: #AFB1B8;
  /*------------Footer-----------*/
 
  .footer {  
-
-    background-color:var(--bgrd--title--color);
+      background-color:var(--bgrd--title--color);
     padding: 60px 0 ;
-
- 
  }
  
+
+.container_footer{
+    display: flex;
+    align-items: baseline;   
+}
+
 .footer_web_studio {
     font-family: 'Raleway';
     font-weight: 700;
@@ -482,21 +495,26 @@ font-size: 14px;
 .footer_contacts_list:focus {
     color: var(--btx-title--color);
 }
-
+.container_soc{
+    
+    align-items: center;
+    justify-content: center;
+    
+       margin-left: 70px;
+}
 .footer_info {
 
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
-    color: var(--first-title-color);
-    text-align: center;
-    margin-bottom: 50px;
     color: var(--second-title-color);
+    text-transform: uppercase;
+
 }
+
 .footer_soc {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+        gap: 10px;
 }
 
 .footer_soc_link {
@@ -508,6 +526,7 @@ font-size: 14px;
     justify-content: center;
     color: var(--second-title-color);
 background-color: rgba(255, 255, 255,10%);
+margin-top:20px;
 }
 
 
