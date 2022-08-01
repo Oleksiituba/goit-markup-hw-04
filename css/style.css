@@ -127,8 +127,8 @@ display: flex;
         color: var(--text-title--color);
          padding-top: 32px;
          padding-bottom: 32px;
-            display: flex;
-                align-items: center
+         display: flex;
+          align-items: center
 }
 
 
@@ -136,6 +136,7 @@ display: flex;
 
     fill: currentColor;
     margin-right: 10px;
+    align-items: center
 
     
 
@@ -561,14 +562,19 @@ margin-top:20px;
         
         margin-bottom: 50px;
         justify-content: center
-       
-       
-
+    
 }
+
 .port_btn_item{
 
     margin-left: 8px;
 }
+/* .port_btn_item:hover,
+.port_btn_item:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+} */
 .blue_btn{
     margin-left: 0;
 }
@@ -592,6 +598,9 @@ margin-top:20px;
 .port_btn:focus {
     background-color: var(--btx-title--color);
     color:var(--second-title-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    
 }
  .current_button {
      background-color: var(--btx-title--color);
@@ -607,8 +616,18 @@ margin-top:20px;
     /* outline: 1px solid tomato; */
      
       max-width: 100%;
-     
+
+
         }
+    .card_project{
+        cursor: pointer;
+    }
+.menu_project_list:hover,
+.menu_project_list:focus{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+   
+}
+
         .menu_project_img{
             display: block;
             
