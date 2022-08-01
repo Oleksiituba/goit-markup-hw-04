@@ -173,6 +173,7 @@ display: flex;
     background-size: contain;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1600px;
   
 }
 .container_main_name{
