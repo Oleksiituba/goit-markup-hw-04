@@ -80,6 +80,10 @@ padding-top: 24px;
 list-style: none;
 display: flex;
 }
+
+.header-links:not(:last-child) {
+    margin-right: 50px;
+}
 .header-link{
    
         font-weight: 500;
@@ -92,9 +96,7 @@ display: flex;
         padding-bottom: 32px;
 
 }
-.header-link:not(:last-child){
-    margin-right: 50px;
-}
+
 .header-link :hover,
 .header-link :focus
 {
@@ -115,22 +117,22 @@ display: flex;
         gap: 50px;
 }
 
-.header-link-contact {
-   
+
     
-        font-weight: 500;
+
+.header-link-contact{
+    font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         list-style: none;
         text-decoration: none;
-        color: var(--text-title--color);
-         padding-top: 32px;
-         padding-bottom: 32px;
-         display: flex;
-         align-items: center
+    color: var(--text-title--color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center
 }
-
 
 .contacts-ikon{
 
@@ -349,8 +351,7 @@ column-gap: 30px;
 .content_time{
 
 text-align: center;
-padding-top: 30px;
-padding-bottom: 30px;
+padding: 30px 32px;
 }
 .team_name{
 
@@ -372,7 +373,7 @@ padding-bottom: 30px;
 .team_soc{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 .team_soc_link{
     width: 44px;
@@ -396,7 +397,7 @@ color: #AFB1B8;
 .client{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 .client_title {
 
@@ -407,13 +408,18 @@ color: #AFB1B8;
     text-align: center;
     margin-bottom: 50px;
 }
-
-.client_link {
+.client_item {
+    
     width: 170px;
-    height: 92px;
-    display: flex;
+        height: 92px;
+}
+.client_link {
+  width: 100%;
+  height: 100%;
+display: flex;
     align-items: center;
     justify-content: center;
+    outline: transparent;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -509,6 +515,7 @@ font-size: 14px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    
     color: var(--second-title-color);
     text-transform: uppercase;
 
@@ -615,10 +622,11 @@ margin-top:20px;
 
         }
     .card_project{
+        display: block;
         cursor: pointer;
     }
-.menu_project_list:hover,
-.menu_project_list:focus{
+.card_project:hover,
+.card_project:focus{
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
    
 }
