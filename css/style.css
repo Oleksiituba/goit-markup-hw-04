@@ -515,7 +515,7 @@ font-size: 14px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    
+    font-weight: 700;
     color: var(--second-title-color);
     text-transform: uppercase;
 
